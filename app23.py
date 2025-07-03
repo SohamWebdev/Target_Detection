@@ -6,7 +6,6 @@ from ultralytics import YOLO
 import numpy as np
 from datetime import datetime
 from collections import deque, defaultdict
-import playsound
 import time
 
 # --- Animated and Modern CSS ---
@@ -140,7 +139,7 @@ def log_alert(activity):
 
 def play_alert_sound():
     try:
-        playsound.playsound(SOUND_FILE)
+        st.audio(SOUND_FILE)
     except Exception as e:
         st.warning("Sound error: " + str(e))
 
