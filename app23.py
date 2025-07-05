@@ -320,7 +320,7 @@ if show_screenshots:
 
 import os
 
-Create folders if they don't exist
+# Create folders if they don't exist
 os.makedirs("abnormal_screenshots", exist_ok=True)
 os.makedirs("heatmaps", exist_ok=True)
 
